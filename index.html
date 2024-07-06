@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nifty 50 Stock Performance Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nifty 50 Stock Performance Comparison</h1>
+        <label for="startDate">Start Date:</label>
+        <input type="month" id="startDate" />
+        <label for="endDate">End Date:</label>
+        <input type="month" id="endDate" />
+        <label for="numTopStocks">Number of Top Stocks:</label>
+        <input type="number" id="numTopStocks" min="1" max="50" value="5" />
+        <button id="loadDataButton">Load Data</button>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
