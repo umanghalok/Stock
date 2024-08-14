@@ -1,38 +1,148 @@
-.App {
+body{
+  background-color: #fff;
+}
+.container {
+  max-width: 70%;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.alert {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-group {
+  margin-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.form-group input,
+.form-group select {
+  width: 98%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.load-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.load-button:hover {
+  background-color: #266bb0;
+}
+
+.results h2 {
+  color: #27ae60;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.results h3 {
+  margin-top: 20px;
+  color: #2980b9;
+  text-align: center;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.results-table th,
+.results-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.results-table th {
+  background-color: #34495e;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.results-table tr:hover td {
+  background-color: #d9d9d9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    max-width: 95%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .form-group input,
+  .form-group select {
+    font-size: 14px;
+  }
+
+  .load-button {
+    font-size: 16px;
+  }
+
+  .results-table th,
+  .results-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0 5px;
+  }
+
+  .form {
+    padding: 15px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 12px;
+  }
+
+  .load-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .results-table th,
+  .results-table td {
+    font-size: 12px;
+    padding: 6px;
   }
 }
